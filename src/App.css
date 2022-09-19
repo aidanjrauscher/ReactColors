@@ -1,5 +1,57 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: Helvetica;
+}
+
 main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+  height: 100vh;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  row-gap: 2vh;
+}
+
+.colors{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  border: 0.25vh solid #000000;
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.color{
+  height: 100%;
+  border: none;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+.controls{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  column-gap: 2vh; 
+  height: 4vh;
+}
+
+.controlButton{
+  background: #3459F9;
+  color: #FFFFFF;
+  border-radius: 0.5vh;
+  border: none;
+  height: 4vh;
 }
